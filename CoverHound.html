@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="windows chrome auto-layout auto vehicles-and-drivers wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n6-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n3-active wf-proximanova-i3-active wf-active" lang="en-US"><head>
+<html class="windows chrome auto-layout auto vehicles-and-drivers wf-proximanova-n7-active wf-proximanova-i7-active wf-proximanova-n6-active wf-proximanova-n4-active wf-proximanova-i4-active wf-proximanova-n3-active wf-proximanova-i3-active wf-active" lang="en-US">
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Cheepcarinsurancequote Vehicle and Driver</title>
@@ -16,7 +17,11 @@
 
     
   
-  <link data-olark="true" rel="stylesheet" href="./CoverHound_files/theme.css" type="text/css"></head>
+  <link data-olark="true" rel="stylesheet" href="./CoverHound_files/theme.css" type="text/css">
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+  </head>
   
   <body class="group">
         <header>
@@ -151,7 +156,7 @@
 <option value="F150">F150</option>
 <option value="F250">F250</option>
 <option value="F350">F350</option>
-<option value="LASER">LASER</option>
+<option value="LASER">LASER</option>	
 <option value="LTD">LTD</option>
 <option value="MUSTANG">MUSTANG</option>
 <option value="RANGER">RANGER</option>
@@ -187,10 +192,12 @@
               <label for="vehicle_ownership">
                 <p>Ownership</p>
               </label>
-              <div class="fancy-select" style="width: 100% !important"><select name="vehicle[ownership]" id="vehicle_ownership" class="fancified"><option value="">– Select –</option>
+              <div class="vehiclebox" style="width: 100% !important">
+			  <select name="vehicle[ownership]" id="vehicle_ownership" class="fancified"><option value="">– Select –</option>
 <option value="paid_in_full">I own it, and it's paid in full</option>
 <option value="financed">It's financed, and I'm still making payments</option>
-<option value="leased">It's leased</option></select><div class="trigger">– Select –</div><ul class="options" style="width: 270px;"><li data-value="paid_in_full">I own it, and it's paid in full</li><li data-value="financed">It's financed, and I'm still making payments</li><li data-value="leased">It's leased</li></ul></div>
+<option value="leased">It's leased</option></select>
+</div>
             </div>
             <br>
             <div class="vehicle-primary-use">
@@ -200,10 +207,10 @@
                   
                 </span>
               </label>
-              <div class="fancy-select" style="width: 100% !important"><select name="vehicle[primary_use]" id="vehicle_primary_use" class="fancified"><option value="">– Select –</option>
+              <div class="wsselect" style="width: 100% !important"><select name="vehicle[primary_use]" id="vehicle_primary_use" class="fancified"><option value="">– Select –</option>
 <option value="commute">Commute to work/school</option>
 <option value="pleasure">Pleasure</option>
-<option value="business">Business</option></select><div class="trigger">– Select –</div><ul class="options" style="width: 201px;"><li data-value="commute">Commute to work/school</li><li data-value="pleasure">Pleasure</li><li data-value="business">Business</li></ul></div>
+<option value="business">Business</option></select></div>
             </div>
           </div>
 
