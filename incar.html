@@ -321,9 +321,7 @@ input:checked + .slider:before {
       <div class="input-group input-group-icon">
         <h4>Is this vehicle used for any rideshare program such as Uber or Lyft?</h4>
 		<div class="col-half">
-		 <div class="col-third">
-            No
-          </div>
+		 
           <div class="col-third">
             <input name="vehicle[ride_sharing]" type="checkbox" value="0">
 		 <label class="switch">
@@ -331,9 +329,7 @@ input:checked + .slider:before {
   <span class="slider round"> </span>
 </label>
           </div>
-          <div class="col-third">
-            Yes
-          </div>
+          
 		 
 		</div>
       </div>
@@ -341,10 +337,37 @@ input:checked + .slider:before {
       
     </div>
     <div class="row">
-      <h4>Terms and Conditions</h4>
+      <h4>Who drives this vehicle?</h4>
       <div class="input-group">
-        <input type="checkbox" id="terms"/>
-        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+        <div class="input-group">
+		<div class="col-half">
+          <div class="col-third">
+            <input type="text" placeholder="first Name"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="Last Name"/>
+          </div>
+		  <div class="col-third">
+            <input type="text" placeholder="mm/dd/yy"/>
+          </div>
+          
+		  </div>
+		  <div class="col-half">
+		   <div class="col-third">
+            <select name="driver[gender]" id="driver_gender" class="">
+			<option value="">– Gender –</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option></select>
+          </div>
+		  <div class="col-third">
+             <input type="checkbox" id="terms"/>
+        <label for="terms">Primary</label>
+          </div>
+		  <div class="col-third">
+            <input type="button" value="X"/>
+          </div>
+		  </div>
+        </div>
       </div>
     </div>
   </form>
